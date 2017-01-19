@@ -1,0 +1,6 @@
+﻿  03 STL Queue.cpp
+c:\cs-250\labs\lab 1\03 stl queue\03 stl queue\03 stl queue.cpp(13): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\cs-250\labs\lab 1\03 stl queue\03 stl queue\03 stl queue.cpp(14): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\cs-250\labs\lab 1\03 stl queue\03 stl queue\03 stl queue.cpp(15): warning C4305: 'argument': truncation from 'double' to 'float'
+  03 STL Queue.vcxproj -> C:\cs-250\Labs\Lab 1\03 STL Queue\Debug\03 STL Queue.exe
+  03 STL Queue.vcxproj -> C:\cs-250\Labs\Lab 1\03 STL Queue\Debug\03 STL Queue.pdb (Partial PDB)
