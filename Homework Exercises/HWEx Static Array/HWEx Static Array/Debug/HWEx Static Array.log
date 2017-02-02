@@ -1,0 +1,8 @@
+﻿  SmartStaticArray.cpp
+c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(17): warning C4715: 'SmartStaticArray::Push': not all control paths return a value
+c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(38): warning C4715: 'SmartStaticArray::Insert': not all control paths return a value
+c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(64): warning C4715: 'SmartStaticArray::Pop': not all control paths return a value
+c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(85): warning C4715: 'SmartStaticArray::Remove': not all control paths return a value
+c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(144): warning C4172: returning address of local variable or temporary: blorp
+  HWEx Static Array.vcxproj -> C:\cs-250\Homework Exercises\HWEx Static Array\Debug\HWEx Static Array.exe
+  HWEx Static Array.vcxproj -> C:\cs-250\Homework Exercises\HWEx Static Array\Debug\HWEx Static Array.pdb (Partial PDB)
