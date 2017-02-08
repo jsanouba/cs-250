@@ -7,11 +7,11 @@ void Tester_SmartStaticArray::Start()
 
 	cout << "TESTS BEGIN..." << endl << endl;
 
-	//score += TestPush();
-	score += TestInsert();
-	//score += TestExtend();
-	//score += TestPop();
-	//score += TestRemove();
+	//score += TestPush();			good
+	//score += TestInsert();		broken
+	//score += TestExtend();		broken
+	//score += TestPop();			good
+	//score += TestRemove();		almost good
 	//score += TestGet();
 	//score += TestSize();
 	//score += TestIsFull();
