@@ -23,20 +23,18 @@ bool SmartStaticArray::Insert( int index, const string& newItem )
 	{
 		return false; // temp
 	}
-	else if (index == m_itemCount)
-	{
-		m_data[index] = newItem;
-	}
 	else
 	{
-		for (int i = m_itemCount; i >= index; i--)
+		for (int i = m_itemCount; i > index; i--)
 		{
 			m_data[i] = m_data[i - 1];
 		}
-		m_data[index] = newItem;
+
 	}
-	
+	m_data[index] = newItem;
+	m_itemCount++;
 	return true;
+
 }
 
 
@@ -85,7 +83,6 @@ bool SmartStaticArray::Remove( int index )
 		m_data[i] = m_data[i + 1];
 
 	}
-	return true;
 }
 
 
@@ -151,4 +148,10 @@ SmartStaticArray& SmartStaticArray::operator=( const SmartStaticArray& other )
 bool SmartStaticArray::operator==( const SmartStaticArray& other )
 {
 	return false; // temp
+}
+
+
+bool SmartStaticArray::operator!=(const SmartStaticArray& other)
+{
+	return !(*this == other);
 }
