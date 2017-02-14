@@ -47,7 +47,7 @@ bool SmartStaticArray::Extend( const SmartStaticArray& other )
 
 	for (int i = 0; i < other.Size(); i++)
 	{
-		m_data[m_itemCount + i] = other[i];
+		m_data[m_itemCount + i] = other.Get(i);
 	}
 	return true;
 }
