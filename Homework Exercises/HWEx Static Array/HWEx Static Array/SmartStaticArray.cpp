@@ -40,15 +40,15 @@ bool SmartStaticArray::Insert( int index, const string& newItem )
 
 bool SmartStaticArray::Extend( const SmartStaticArray& other )
 {
-	//if (m_itemCount + other.Size() > MAX_SIZE)
-	//{
-	//	return false; // temp
-	//}
+	if ( m_itemCount + other.Size() > MAX_SIZE)
+	{
+		return false; // temp
+	}
 
-	//for (int i = m_itemCount; i < m_itemCount + other.Size(); i++)
-	//{
-	//	m_data[i] = other[i - m_itemCount];
-	//}
+	for (int i = 0; i < other.Size(); i++)
+	{
+		m_data[m_itemCount + i] = other[i];
+	}
 	return true;
 }
 

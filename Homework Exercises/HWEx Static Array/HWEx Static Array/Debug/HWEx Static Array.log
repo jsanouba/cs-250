@@ -1,4 +1,5 @@
 ﻿  SmartStaticArray.cpp
+c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(53): warning C4715: 'SmartStaticArray::Extend': not all control paths return a value
 c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(17): warning C4715: 'SmartStaticArray::Push': not all control paths return a value
 c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(86): warning C4715: 'SmartStaticArray::Remove': not all control paths return a value
 c:\cs-250\homework exercises\hwex static array\hwex static array\smartstaticarray.cpp(145): warning C4172: returning address of local variable or temporary: blorp
