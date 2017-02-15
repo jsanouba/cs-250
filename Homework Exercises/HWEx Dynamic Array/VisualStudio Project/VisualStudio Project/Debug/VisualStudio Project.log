@@ -1,0 +1,5 @@
+﻿  SmartDynamicArray.cpp
+c:\cs-250\homework exercises\hwex dynamic array\smartdynamicarray.cpp(27): warning C4715: 'SmartDynamicArray::Push': not all control paths return a value
+c:\cs-250\homework exercises\hwex dynamic array\smartdynamicarray.cpp(72): warning C4715: 'SmartDynamicArray::Remove': not all control paths return a value
+  VisualStudio Project.vcxproj -> C:\cs-250\Homework Exercises\HWEx Dynamic Array\VisualStudio Project\Debug\VisualStudio Project.exe
+  VisualStudio Project.vcxproj -> C:\cs-250\Homework Exercises\HWEx Dynamic Array\VisualStudio Project\Debug\VisualStudio Project.pdb (Partial PDB)
