@@ -62,7 +62,35 @@ class LinkedList
 
     bool Insert( int index, const T& newItem )
     {
-        return false; // temp
+		if (index < 0 || index > m_itemCount)
+		{
+			return false;
+		}
+		else if (index == m_itemCount)
+		{
+			Push(newItem);
+			return true;
+		}
+
+		Node<T>* ptrCurrent = m_ptrFirst;
+		int counter = 0;
+
+		// Traverse the list until we get to position "index"
+		while (counter < index)
+		{
+			ptrCurrent = ptrCurrent->ptrNext;
+			counter++;
+		}
+
+		Node<T>* newNode = new Node<T>;
+		newNode->data = newItem;
+		
+		newNode->ptrPrev = ptrCurrent->ptrPrev;
+		newNode->ptrNext = ptrCurrent;
+		ptrCurrent->ptrPrev->ptrNext = newNode;
+		ptrCurrent->ptrPrev = newNode;
+
+
     }
 
     void Extend( const LinkedList& other )
@@ -116,6 +144,19 @@ class LinkedList
 		{
 			Pop();
 		}
+
+		Node<T>* ptrCurrent = m_ptrFirst;
+		int counter = 0;
+
+		// Traverse the list until we get to position "index"
+		while (counter < index)
+		{
+			ptrCurrent = ptrCurrent->ptrNext;
+			counter++;
+		}
+
+
+
     }
 
     T Get( int index ) const
