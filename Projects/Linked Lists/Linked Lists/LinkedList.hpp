@@ -143,9 +143,12 @@ class LinkedList
 		else if (Size() == 1 || index == m_itemCount - 1)
 		{
 			Pop();
+			return true;
 		}
 
 		Node<T>* ptrCurrent = m_ptrFirst;
+		Node<T>* PrevNode = ptrCurrent->ptrPrev;
+		Node<T>* NextNode = ptrCurrent->ptrNext;
 		int counter = 0;
 
 		// Traverse the list until we get to position "index"
@@ -155,7 +158,11 @@ class LinkedList
 			counter++;
 		}
 
-
+		PrevNode->ptrNext = ptrCurrent->ptrNext;
+		NextNode->ptrPrev = ptrCurrent->ptrPrev;
+		delete ptrCurrent;
+		m_itemCount--;
+		return true;
 
     }
 
