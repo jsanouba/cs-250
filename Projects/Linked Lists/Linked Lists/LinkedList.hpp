@@ -91,6 +91,7 @@ class LinkedList
 		ptrCurrent->ptrPrev = newNode;
 
 
+
     }
 
     void Extend( const LinkedList& other )
@@ -145,10 +146,10 @@ class LinkedList
 			Pop();
 			return true;
 		}
+	
 
 		Node<T>* ptrCurrent = m_ptrFirst;
-		Node<T>* PrevNode = ptrCurrent->ptrPrev;
-		Node<T>* NextNode = ptrCurrent->ptrNext;
+
 		int counter = 0;
 
 		// Traverse the list until we get to position "index"
@@ -157,6 +158,9 @@ class LinkedList
 			ptrCurrent = ptrCurrent->ptrNext;
 			counter++;
 		}
+
+		Node<T>* PrevNode = ptrCurrent->ptrPrev;
+		Node<T>* NextNode = ptrCurrent->ptrNext;
 
 		PrevNode->ptrNext = ptrCurrent->ptrNext;
 		NextNode->ptrPrev = ptrCurrent->ptrPrev;
