@@ -33,8 +33,6 @@ int main()
 	states.push_back("Washington");
 	states.push_back("Alaska");
 
-	states.sort();
-	states.reverse();
 
 
 	for (list<string>::iterator it = states.begin(); it != states.end(); it++)
