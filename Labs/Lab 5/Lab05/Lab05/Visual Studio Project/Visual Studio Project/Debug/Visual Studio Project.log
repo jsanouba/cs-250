@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\svc-student\desktop\lab05\queue\queue.hpp(29): error C4716: 'Queue<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::Take': must return a value
+c:\users\svc-student\desktop\lab05\stack\stack.hpp(29): error C4716: 'Stack<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::Take': must return a value
